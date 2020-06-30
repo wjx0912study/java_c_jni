@@ -72,7 +72,7 @@ int main()
 	printf("create jvm success.\n");
 	jint ver = env->GetVersion();
 	printf("jvm version: %d.%d\n", ((ver >> 16) & 0x0f), (ver & 0x0f));
-	jclass myclass = env->FindClass("MyTest");  // try to find the class 
+	jclass myclass = env->FindClass("com/mingjiekeji/convert/pdf2docx/MyTest");  // try to find the class 
 	if (myclass != nullptr) {
 		// 测试1：静态函数无参数
 		jmethodID mid1 = env->GetStaticMethodID(myclass, "mymain1", "()V");
