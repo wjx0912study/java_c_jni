@@ -1,3 +1,5 @@
+package com.mingjiekeji.convert.pdf2docx;
+
 public class MyTest
 {
     private static int magic_counter = 777;
